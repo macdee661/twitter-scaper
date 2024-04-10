@@ -11,11 +11,11 @@ export default function Tweet({username, tweetText, link }){
         <div className="tweet-box">
         <p className="username">{username}</p>
         <p className="tweet-text">{tweetText}</p>
-        <a className="link" href={link}>{link}</a>
+        <a className="link" href={link} target="_blank" >{link} </a>
         </div>
         
         <br />
-        <br />
+    
 
 
 

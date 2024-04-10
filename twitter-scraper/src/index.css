@@ -2,7 +2,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif; /* Change 'monospace' to 'sans-serif' */
+    font-family: 'Nunito', sans-serif; 
 }
 
 body {
@@ -17,7 +17,7 @@ body {
     align-items: center;
     gap: 2.5rem;
     padding: 0rem 1rem;
-    font-size:x-large;
+    font-size:xx-large;
 }
 .site-title {
     font-size: 3rem;
@@ -67,9 +67,9 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 6%;
-    font-size: xxx-large;
-    
-    
+    font-size: 450%;
+    font-weight: 700;
+ 
 
 }
 hr {
@@ -86,7 +86,6 @@ hr {
 
 .username {
     font-size: large;
-    font-weight: 300;
 
 }
 
@@ -98,5 +97,7 @@ hr {
 
 .link {
     color: black;
+    font-weight: 800;
+    margin: 0 1;    
     
 }

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Tweet from "./Tweet";
-import tweetData from './data.json'; // Correct import path
+import tweetData from './tweets.json'; // Correct import path
 
-export default function TrendingTweets() {
+export default function PersonalizedTweets() {
     const [data, setData] = useState([]);
 
     useEffect(() => {

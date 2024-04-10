@@ -6,25 +6,26 @@ import PersonalizedTweets from '../components/PersonalizedTweets';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Tweet from '../components/Tweet';
-import TrendingTweets from '../components/TrendingTweets';
 
 function App() {
-    const [header, changeHeading] = useState('Welcome. Here are your new tweets');
+    const [header, changeHeading] = useState('Welcome. Here are your personalized tweets');
+    const [page, changePage] = useState(<PersonalizedTweets />)
 
     const setHeading = (newHeading) => {
         changeHeading(newHeading);
     };
 
-    const [page, changePage] = useState(<PersonalizedTweets/>)
+    const setPage = (newPage) => {
+        changePage(newPage);
+    };
 
     return (
         <>
             <br />
             <br />
-            <Navbar setHeading={setHeading} />
+            <Navbar setHeading={setHeading} setPage={setPage}/>
             <Header heading={header} />
- 
-            <TrendingTweets/>
+            {page}
         </>
     );
 }
